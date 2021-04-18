@@ -33,4 +33,4 @@ export class ClientsService {
         const clientToDelete = this.clientModel.findByIdAndDelete(clientID).exec();
         return clientToDelete;
     }
-}
+};
