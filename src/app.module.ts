@@ -6,7 +6,6 @@ import {MongooseModule} from '@nestjs/mongoose';
 
 @Module({
   imports: [ClientsModule, MongooseModule.forRoot('mongodb://localhost/appointmentdb', {
-    createIndexes: true,
     useFindAndModify: true,
     useCreateIndex: true
   })],
