@@ -17,10 +17,10 @@ export class Client {
   @Prop({ required: true })
   phoneNumber: number;
 
-  @Prop({ unique: true })
+  @Prop({ unique: true, required: true })
   nif: string;
 
-  @Prop({ required: true })
+  @Prop()
   appointment: string[];
 
   @Prop( { type: Object })
